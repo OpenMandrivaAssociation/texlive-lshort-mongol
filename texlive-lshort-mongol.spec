@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/lshort/mongolian/lshort-mongol
+# catalog-date 2009-11-09 23:05:00 +0100
+# catalog-license lppl
+# catalog-version 4.26
 Name:		texlive-lshort-mongol
 Version:	4.26
 Release:	1
@@ -45,6 +51,7 @@ A translation of Oetiker's Not so short introduction.
 %doc %{_texmfdistdir}/doc/latex/lshort-mongol/src/things.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-mongol/src/title.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-mongol/src/typeset.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +62,5 @@ A translation of Oetiker's Not so short introduction.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
