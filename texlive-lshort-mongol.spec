@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-mongol.doc
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 A translation of Oetiker's Not so short introduction.
@@ -51,7 +49,6 @@ A translation of Oetiker's Not so short introduction.
 %doc %{_texmfdistdir}/doc/latex/lshort-mongol/src/things.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-mongol/src/title.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-mongol/src/typeset.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -62,5 +59,3 @@ A translation of Oetiker's Not so short introduction.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
