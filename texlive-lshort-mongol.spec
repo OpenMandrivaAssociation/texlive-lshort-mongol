@@ -59,3 +59,17 @@ A translation of Oetiker's Not so short introduction.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 4.26-2
++ Revision: 753475
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 4.26-1
++ Revision: 718895
+- texlive-lshort-mongol
+- texlive-lshort-mongol
+- texlive-lshort-mongol
+- texlive-lshort-mongol
+
