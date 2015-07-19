@@ -6,7 +6,7 @@
 # catalog-version 4.26
 Name:		texlive-lshort-mongol
 Version:	4.26
-Release:	9
+Release:	10
 Summary:	Short introduction to LaTeX, in Mongolian
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/mongolian/lshort-mongol
