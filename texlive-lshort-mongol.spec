@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /info/lshort/mongolian/lshort-mongol
-# catalog-date 2009-11-09 23:05:00 +0100
-# catalog-license lppl
-# catalog-version 4.26
 Name:		texlive-lshort-mongol
-Version:	4.26
-Release:	11
+Version:	15878
+Release:	1
 Summary:	Short introduction to LaTeX, in Mongolian
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/mongolian/lshort-mongol
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-mongol.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-mongol.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-mongol.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-mongol.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -52,24 +46,10 @@ A translation of Oetiker's Not so short introduction.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 4.26-2
-+ Revision: 753475
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 4.26-1
-+ Revision: 718895
-- texlive-lshort-mongol
-- texlive-lshort-mongol
-- texlive-lshort-mongol
-- texlive-lshort-mongol
-
