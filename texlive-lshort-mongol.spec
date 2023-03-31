@@ -1,6 +1,6 @@
 Name:		texlive-lshort-mongol
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Short introduction to LaTeX, in Mongolian
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/mongolian/lshort-mongol
